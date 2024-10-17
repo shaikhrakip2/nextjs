@@ -1,3 +1,5 @@
+'use client';
+import Image from "next/image";
 import Link from "next/link";
 
 export default function Main() {
@@ -10,8 +12,8 @@ export default function Main() {
     >
       <div className="container-fluid container-xl position-relative d-flex align-items-center justify-content-between">
         <Link href="/" className="logo d-flex align-items-center" aria-label="Home">
-          <img src="assets/img/logoadiyogi.png" alt="Adiyogi Logo" />
-          <h1 className="sitename">Adiyogi</h1>
+          <Image src="/assets/img/logoadiyogi.png" width={200} height={100} alt="Adiyogi Logo" />
+          <h1 className="sitename"></h1>
         </Link>
         <nav id="navmenu" className="navmenu">
           <ul>

@@ -1,4 +1,7 @@
+'use client';
 import Link from "next/link";
+import Image from "next/image";
+
 
 const Footer = () => {
     return (
@@ -6,7 +9,7 @@ const Footer = () => {
           <main className="main">
         {/* Hero Section */}
         <section id="hero" className="hero section dark-background">
-          <img src="assets/img/hero-bg.jpg" alt="" data-aos="fade-in" />
+          <Image src="/assets/img/hero-bg.jpg" width={300} height={100} alt="" data-aos="fade-in" />
           <div
             id="hero-carousel"
             className="carousel carousel-fade"
@@ -43,7 +46,7 @@ const Footer = () => {
                   </Link>
                 </div>
               </div>
-             
+
               <div className="carousel-item">
                 <div className="carousel-container">
                   <h2>Sequi ea ut et est quaerat</h2>
@@ -177,7 +180,7 @@ const Footer = () => {
                 data-aos="fade-up"
                 data-aos-delay={100}
               >
-                <img src="assets/img/about.jpg" className="img-fluid" alt="" />
+                <Image src="/assets/img/about.jpg" width={200}  height={100} className="img-fluid" alt="" />
                 <a
                   href="https://www.youtube.com/watch?v=Y7f98aduVJ8"
                   className="glightbox pulsating-play-btn"
@@ -246,7 +249,7 @@ const Footer = () => {
                 data-aos="zoom-out"
                 data-aos-delay={100}
               >
-                <img src="assets/img/features-1.svg" className="img-fluid" alt="" />
+                
               </div>
               <div className="col-md-7" data-aos="fade-up" data-aos-delay={100}>
                 <h3>
@@ -259,7 +262,7 @@ const Footer = () => {
                 </p>
                 <ul>
                   <li>
-                    <i className="bi bi-check" />
+                    <i className="bi bi-check" /> 
                     <span>
                       {" "}
                       Ullamco laboris nisi ut aliquip ex ea commodo consequat.
@@ -278,14 +281,15 @@ const Footer = () => {
                 </ul>
               </div>
             </div>
-      
+  
             <div className="row gy-4 align-items-center features-item">
               <div
                 className="col-md-5 order-1 order-md-2 d-flex align-items-center"
                 data-aos="zoom-out"
                 data-aos-delay={200}
               >
-                <img src="assets/img/features-2.svg" className="img-fluid" alt="" />
+                <Image src="/assets/img/features-2.svg" width={200} height={200}  className="img-fluid" alt="" />
+                
               </div>
               <div
                 className="col-md-7 order-2 order-md-1"
@@ -309,7 +313,7 @@ const Footer = () => {
         
             <div className="row gy-4 align-items-center features-item">
               <div className="col-md-5 d-flex align-items-center" data-aos="zoom-out">
-                <img src="assets/img/features-3.svg" className="img-fluid" alt="" />
+                <Image src="/assets/img/features-3.svg" width={200} height={200} className="img-fluid" alt="" />
               </div>
               <div className="col-md-7" data-aos="fade-up">
                 <h3>
@@ -351,7 +355,7 @@ const Footer = () => {
                 className="col-md-5 order-1 order-md-2 d-flex align-items-center"
                 data-aos="zoom-out"
               >
-                <img src="assets/img/features-4.svg" className="img-fluid" alt="" />
+                <Image src="/assets/img/features-4.svg" width={200} height={100} className="img-fluid" alt="" />
               </div>
               <div className="col-md-7 order-2 order-md-1" data-aos="fade-up">
                 <h3>
@@ -489,6 +493,7 @@ const Footer = () => {
             </p>
           </div>
         </footer>
+        
        
     
      
